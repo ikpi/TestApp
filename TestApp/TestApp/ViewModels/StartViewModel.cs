@@ -13,7 +13,7 @@ namespace TestApp.ViewModels
     public class StartViewModel:BaseViewModel
     {
         private StartPage _page;
-        private readonly ObservableCollection<ISotialNetwork> _sotialNetworks = new ObservableCollection<ISotialNetwork>()
+        private readonly ObservableCollection<ISocialNetwork> _socialNetworks = new ObservableCollection<ISocialNetwork>()
         {
             new VKStrategy(),
             new TWStrategy(),
@@ -26,11 +26,11 @@ namespace TestApp.ViewModels
             SotialNetworkClickCommand = new RelayCommand(OnSotialNetworkClickCommand);
         }
 
-        public ObservableCollection<ISotialNetwork> SotialNetworks
+        public ObservableCollection<ISocialNetwork> SocialNetworks
         {
             get
             {
-                return _sotialNetworks;
+                return _socialNetworks;
             }
         }
 
@@ -38,8 +38,8 @@ namespace TestApp.ViewModels
 
         private void OnSotialNetworkClickCommand(object obj)
         {
-            ISotialNetwork selectedSotialNetwork = obj as ISotialNetwork;
-            SotialNetworkProvider.SetInstance(selectedSotialNetwork);
+            ISocialNetwork selectedSotialNetwork = obj as ISocialNetwork;
+            SocialNetworkProvider.SetInstance(selectedSotialNetwork);
             _page.NavigationService.Navigate(new Uri("/Views/AuthorizationPage.xaml", UriKind.Relative));
         }
     }

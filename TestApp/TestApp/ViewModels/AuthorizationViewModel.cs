@@ -21,7 +21,7 @@ namespace TestApp.ViewModels
         {
             get
             {
-                return SotialNetworkProvider.Instance.GetSotialNetwork().Name;
+                return SocialNetworkProvider.Instance.GetSotialNetwork().Name;
             }
         }
     }
