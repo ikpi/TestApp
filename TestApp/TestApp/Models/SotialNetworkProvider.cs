@@ -13,10 +13,7 @@ namespace TestApp.Models
 
         public static SotialNetworkProvider SetInstance(ISotialNetwork sotialNetwork)
         {
-            if (instance != null)
-            {
-                instance = new SotialNetworkProvider(sotialNetwork);
-            }
+            instance = new SotialNetworkProvider(sotialNetwork);
             return instance;
         }
 
@@ -24,10 +21,6 @@ namespace TestApp.Models
         {
             get
             {
-                if (instance != null)
-                {
-                    instance = new SotialNetworkProvider();
-                }
                 return instance;
             }
         }

@@ -69,6 +69,7 @@
     <Compile Include="Models\SotialNetworkProvider.cs" />
     <Compile Include="Models\TWStrategy.cs" />
     <Compile Include="Models\VKStrategy.cs" />
+    <Compile Include="ViewModels\AuthorizationViewModel.cs" />
     <Compile Include="Views\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>

@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using TestApp.ViewModels;
 
 namespace TestApp.Views
 {
@@ -15,6 +16,10 @@ namespace TestApp.Views
         public AuthorizationPage()
         {
             InitializeComponent();
+            Loaded += delegate
+            {
+                DataContext = new AuthorizationViewModel(this);
+            };
         }
     }
 }

@@ -39,6 +39,7 @@ namespace TestApp.ViewModels
         private void OnSotialNetworkClickCommand(object obj)
         {
             ISotialNetwork selectedSotialNetwork = obj as ISotialNetwork;
+            SotialNetworkProvider.SetInstance(selectedSotialNetwork);
             _page.NavigationService.Navigate(new Uri("/Views/AuthorizationPage.xaml", UriKind.Relative));
         }
     }
