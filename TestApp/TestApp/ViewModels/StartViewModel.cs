@@ -23,7 +23,7 @@ namespace TestApp.ViewModels
         public StartViewModel(StartPage page)
         {
             _page = page;
-            VKClickCommand = new RelayCommand(OnVKClickCommand);
+            SotialNetworkClickCommand = new RelayCommand(OnSotialNetworkClickCommand);
         }
 
         public ObservableCollection<ISotialNetwork> SotialNetworks
@@ -34,10 +34,11 @@ namespace TestApp.ViewModels
             }
         }
 
-        public ICommand VKClickCommand { get; set; }
+        public ICommand SotialNetworkClickCommand { get; set; }
 
-        private void OnVKClickCommand(object obj)
+        private void OnSotialNetworkClickCommand(object obj)
         {
+            ISotialNetwork selectedSotialNetwork = obj as ISotialNetwork;
             _page.NavigationService.Navigate(new Uri("/Views/AuthorizationPage.xaml", UriKind.Relative));
         }
     }
