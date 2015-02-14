@@ -5,8 +5,10 @@ using System.Text;
 
 namespace TestApp.Models
 {
-    interface ISotialNetwork
+    public interface ISotialNetwork
     {
+        string Name{get;}
+        string ImageSource { get; }
         void LogIn();
         void LogOut();
     }
