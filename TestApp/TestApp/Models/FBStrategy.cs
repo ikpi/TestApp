@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TestApp.Models
 {
-    internal class FBStrategy : ISotialNetwork
+    public class FBStrategy : ISocialNetwork
     {
         public string Name
         {

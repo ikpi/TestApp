@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TestApp.Models
 {
-    public interface ISotialNetwork
+    public interface ISocialNetwork
     {
         string Name{get;}
         string ImageSource { get; }

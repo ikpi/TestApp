@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TestApp.Models
 {
-    internal class VKStrategy : ISotialNetwork
+    public class VKStrategy : ISocialNetwork
     {
         public string Name
         {
@@ -25,7 +25,6 @@ namespace TestApp.Models
 
         public void LogIn()
         {
-            
         }
 
         public void LogOut()

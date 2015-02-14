@@ -31,8 +31,11 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
-                <TextBlock Text="Sign in with:" FontSize="{StaticResource PhoneFontSizeLarge}"/>
-                <ListBox x:Name="ListBoxSotialNetworks" ItemsSource="{Binding SotialNetworks}"
+                <TextBlock Text="Sign in with:" 
+                           FontSize="{StaticResource PhoneFontSizeLarge}"
+                           Margin="15,0,0,0"/>
+                <ListBox x:Name="ListBoxSotialNetworks"
+                         ItemsSource="{Binding SocialNetworks}"
                          ScrollViewer.VerticalScrollBarVisibility="Disabled">
                     <ListBox.ItemTemplate>
                         <DataTemplate>

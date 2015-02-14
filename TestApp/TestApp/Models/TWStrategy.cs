@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TestApp.Models
 {
-    internal class TWStrategy : ISotialNetwork
+    public class TWStrategy : ISocialNetwork
     {
         public string Name
         {
