@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using TestApp.ViewModels;
 
 namespace TestApp
 {
@@ -19,6 +20,10 @@ namespace TestApp
         public MainPage()
         {
             InitializeComponent();
+            Loaded += delegate
+            {
+                DataContext = new StartViewModel(this);
+            };
         }
     }
 }
