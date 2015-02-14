@@ -25,8 +25,7 @@ namespace TestApp.Models
 
         public void LogIn()
         {
-            VKSDK.Initialize("%your_app_id_here%");
-            VKSDK.WakeUpSession(); 
+            
         }
 
         public void LogOut()
