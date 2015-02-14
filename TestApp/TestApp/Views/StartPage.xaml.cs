@@ -14,10 +14,10 @@ using TestApp.ViewModels;
 
 namespace TestApp
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class StartPage : PhoneApplicationPage
     {
         // Constructor
-        public MainPage()
+        public StartPage()
         {
             InitializeComponent();
             Loaded += delegate

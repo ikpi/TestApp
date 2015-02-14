@@ -62,8 +62,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="Base\BaseViewModel.cs" />
+    <Compile Include="Base\RelayCommand.cs" />
+    <Compile Include="Views\AuthorizationPage.xaml.cs">
+      <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\StartViewModel.cs" />
@@ -73,7 +78,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="Views\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,9 +106,7 @@
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
