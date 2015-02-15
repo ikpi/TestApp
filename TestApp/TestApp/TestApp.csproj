@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
@@ -67,12 +68,18 @@
     </Compile>
     <Compile Include="Base\BaseViewModel.cs" />
     <Compile Include="Base\RelayCommand.cs" />
+    <Compile Include="Models\Debt.cs" />
+    <Compile Include="Models\Debtor.cs" />
     <Compile Include="Models\FBStrategy.cs" />
     <Compile Include="Models\ISocialNetwork.cs" />
     <Compile Include="Models\SocialNetworkProvider.cs" />
     <Compile Include="Models\TWStrategy.cs" />
     <Compile Include="Models\VKStrategy.cs" />
+    <Compile Include="ViewModels\AllDebtsViewModel.cs" />
     <Compile Include="ViewModels\AuthorizationViewModel.cs" />
+    <Compile Include="Views\AllDebtsPivotPage.xaml.cs">
+      <DependentUpon>AllDebtsPivotPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
@@ -87,6 +94,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Views\AllDebtsPivotPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AuthorizationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
