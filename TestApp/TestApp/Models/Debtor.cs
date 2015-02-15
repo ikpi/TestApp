@@ -5,16 +5,16 @@ using System.Text;
 
 namespace TestApp.Models
 {
-    public class Debtor
+    public class Individual
     {
-        private Debtor(string firstName, string lastName, string phoneNumber)
+        private Individual(string firstName, string lastName, string phoneNumber)
         {
             FirstName = firstName;
             LastName = lastName;
             PhoneNumber = phoneNumber;
         }
 
-        public Debtor(string firstName, string lastName) :
+        public Individual(string firstName, string lastName) :
             this(firstName, lastName, string.Empty) { }
 
         public string FirstName { get; private set; }
