@@ -12,7 +12,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
     <phone:PhoneApplicationPage.Resources>
         <Style x:Key="ListBoxItemStyle" TargetType="ListBoxItem">
             <Setter Property="Background" Value="Transparent"/>
@@ -108,6 +109,14 @@
                                     <TextBlock Text="{Binding DateOfCreation}"
                                                HorizontalAlignment="Left"
                                                Margin="0,0,20,0"/>
+                                    <toolkit:ExpanderView Header="Dedails">
+                                        <toolkit:ExpanderView.Items>
+                                            <TextBlock Text="{Binding Comment}"/>
+                                        </toolkit:ExpanderView.Items>
+                                        <!--<toolkit:ExpanderView.Expander>
+                                            <Rectangle Height="100" Width="400" Fill="Green"/>
+                                        </toolkit:ExpanderView.Expander>-->
+                                    </toolkit:ExpanderView>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>

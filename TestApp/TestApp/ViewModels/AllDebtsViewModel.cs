@@ -21,11 +21,11 @@ namespace TestApp.ViewModels
             // Test data. Remove when release.
             _debts = new ObservableCollection<Debt>()
             {
-                new Debt(new Individual("Lol1","Lolenko1"),100,true, DateTime.Now),
-                new Debt(new Individual("Lol2","Lolenko2"),100,true, DateTime.Now),
-                new Debt(new Individual("Lol3","Lolenko3"),100,false, DateTime.Now),
-                new Debt(new Individual("Lol4","Lolenko4"),100,false, DateTime.Now),
-                new Debt(new Individual("Lol5","Lolenko5"),100,false, DateTime.Now),
+                new Debt(new Individual("Lol1","Lolenko1"),100,true, DateTime.Now,"qwsefgbfbxdf sdfsdgdfsg ds sd gdfg d"),
+                new Debt(new Individual("Lol2","Lolenko2"),100,true, DateTime.Now,"qwsefgbfbxdf sdfsdgdfsg ds sd gdfg d"),
+                new Debt(new Individual("Lol3","Lolenko3"),100,false, DateTime.Now,"qwsefgbfbxdf sdfsdgdfsg ds sd gdfg d"),
+                new Debt(new Individual("Lol4","Lolenko4"),100,false, DateTime.Now,"qwsefgbfbxdf sdfsdgdfsg ds sd gdfg d"),
+                new Debt(new Individual("Lol5","Lolenko5"),100,false, DateTime.Now,"qwsefgbfbxdf sdfsdgdfsg ds sd gdfg d"),
             };
         }
 

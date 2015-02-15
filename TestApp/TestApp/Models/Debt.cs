@@ -7,7 +7,7 @@ namespace TestApp.Models
 {
     public class Debt
     {
-        private Debt(Individual individual, int amount, DateTime dateOfCreation,bool isDebit, string comment)
+        public Debt(Individual individual, int amount, bool isDebit, DateTime dateOfCreation, string comment)
         {
             Individual = individual;
             Amount = amount;
@@ -17,7 +17,7 @@ namespace TestApp.Models
         }
 
         public Debt(Individual individual, int debt, bool isDebit, DateTime dateOfCreation) :
-            this(individual, debt, dateOfCreation, isDebit, string.Empty) { }
+            this(individual, debt, isDebit, dateOfCreation, string.Empty) { }
 
         public Individual Individual { get; private set; }
 
