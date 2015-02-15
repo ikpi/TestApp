@@ -69,12 +69,13 @@
     <Compile Include="Base\BaseViewModel.cs" />
     <Compile Include="Base\RelayCommand.cs" />
     <Compile Include="Models\Debt.cs" />
-    <Compile Include="Models\Debtor.cs" />
+    <Compile Include="Models\Individual.cs" />
     <Compile Include="Models\FBStrategy.cs" />
     <Compile Include="Models\ISocialNetwork.cs" />
     <Compile Include="Models\SocialNetworkProvider.cs" />
     <Compile Include="Models\TWStrategy.cs" />
     <Compile Include="Models\VKStrategy.cs" />
+    <Compile Include="ViewModels\AddNewDebtViewModel.cs" />
     <Compile Include="ViewModels\AuthorizationViewModel.cs" />
     <Compile Include="Views\AddNewDebtPage.xaml.cs">
       <DependentUpon>AddNewDebtPage.xaml</DependentUpon>
