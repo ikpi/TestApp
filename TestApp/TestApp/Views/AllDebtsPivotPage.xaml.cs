@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using TestApp.ViewModels;
 
 namespace TestApp.Views
 {
@@ -18,6 +19,10 @@ namespace TestApp.Views
         public AllDebtsPivotPage()
         {
             InitializeComponent();
+            Loaded += delegate
+            {
+               DataContext = new AllDebtsViewModel(this);
+            };
         }
     }
 }

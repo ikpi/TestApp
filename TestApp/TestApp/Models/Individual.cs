@@ -11,7 +11,7 @@ namespace TestApp.Models
         {
             FirstName = firstName;
             LastName = lastName;
-            PhoneNumber = phoneNumber;
+            PhoneNumber = phoneNumber;  
         }
 
         public Individual(string firstName, string lastName) :
@@ -22,5 +22,13 @@ namespace TestApp.Models
         public string LastName { get; private set; }
 
         public string PhoneNumber { get; private set; }
+
+        public string FullName
+        {
+            get
+            {
+                return string.Format("{0} {1}", FirstName, LastName);
+            }
+        }
     }
 }
