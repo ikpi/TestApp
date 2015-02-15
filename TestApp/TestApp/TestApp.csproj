@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
@@ -67,6 +68,8 @@
     </Compile>
     <Compile Include="Base\BaseViewModel.cs" />
     <Compile Include="Base\RelayCommand.cs" />
+    <Compile Include="Models\Debt.cs" />
+    <Compile Include="Models\Debtor.cs" />
     <Compile Include="Models\FBStrategy.cs" />
     <Compile Include="Models\ISocialNetwork.cs" />
     <Compile Include="Models\SocialNetworkProvider.cs" />
